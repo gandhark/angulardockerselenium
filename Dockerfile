@@ -19,7 +19,7 @@ CMD ["bash"]
 ADD html html
 ADD models models
 ADD routes routes
-ADD node_modules node_modules
+#ADD node_modules node_modules
 ADD lib lib
 ADD nightwatch.json nightwatch.json
 
@@ -28,5 +28,7 @@ ADD tests tests
 ADD gatling gatling
 ADD selenium-server-standalone-2.47.1.jar server.js nightwatch.js package.json gulpfile.js ./
 #ENV $HOME=/
+RUN npm install 
+
 
 EXPOSE 3033

@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded( { extended : true}));
 app.use('/api', employee); //This is our route middleware
 
-var connectionString = 'mongodb://172.27.59.92:27017/test';
+var connectionString = 'mongodb://10.0.0.3:27017/test';
  mongoose.connect(connectionString);
 
 //module.exports = app;
